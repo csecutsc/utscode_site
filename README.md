@@ -1,2 +1,3 @@
 # utscode_site
-The source code for Utscode's website
+The official repo for utscode's site
+Test link: https://csecutsc.github.io/utscode_site/
