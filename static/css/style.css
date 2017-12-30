@@ -1,0 +1,38 @@
+#navbar {
+  background-color: white;
+  padding: 1rem 3rem;
+}
+
+body {
+  padding-top: 3rem;
+}
+
+.nav_items {
+  color: black;
+}
+
+.nav-nopadding {
+  padding: 0;
+}
+
+#main {
+  text-align: center;
+  color: black;
+  height: 100vh;
+  border-radius: 0px;
+  background: white;
+  margin: auto;
+}
+
+#about {
+  text-align: center;
+}
+
+.container-segment h3 {
+  text-align: center;
+}
+
+.footer {
+  background-color: aliceblue;
+  text-align: center;
+}
