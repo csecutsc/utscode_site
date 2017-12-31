@@ -1,10 +1,10 @@
 #navbar {
   background-color: white;
-  padding: 1rem 3rem;
+  padding: 10px 30px;
 }
 
 body {
-  padding-top: 3rem;
+  padding-top: 50px;
 }
 
 .nav_items {
@@ -25,14 +25,25 @@ body {
 }
 
 #about {
-  text-align: center;
+
 }
 
 .container-segment h3 {
   text-align: center;
 }
 
-.footer {
-  background-color: aliceblue;
+#sponsors {
   text-align: center;
+}
+.sponsorlogo {
+  display: inline-block;
+  width: 40%;
+  padding: 20px;
+
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid grey;
+  padding: 10px;
 }
