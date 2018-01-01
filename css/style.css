@@ -1,0 +1,45 @@
+#navbar {
+  background-color: #f3f3f3;
+  padding: 10px 30px;
+}
+
+body {
+  padding-top: 50px;
+  background-color: #f3f3f3;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.nav-nopadding {
+  padding: 0;
+}
+
+.btn-primary,
+.btn-primary:focus {
+    background: linear-gradient(to right, #955efa  , #7865f7);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 10px 30px rgba(83, 0, 155, 0.31);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background: linear-gradient(to right, #955efa  , #7865f7) !important;
+    box-shadow: 0px 7px 15px rgba(83, 0, 155, 0.31);
+    transform: translate(0, 3px);
+    transition-delay: 0s !important;
+}
+
+#main {
+  padding: 200px 50px;
+  background: #f3f3f3;
+}
+
+#logo {
+  margin-bottom: 100px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}
