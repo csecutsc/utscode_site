@@ -26,4 +26,9 @@ $(document).ready(function () {
         }
       }
     });
+  // toggle collapse with nav bar items
+  var navCollapseToggle = $("#navbar-items");
+  navCollapseToggle.on("click", "a", null, function () {
+    navCollapseToggle.collapse('hide');
+  });
 });
