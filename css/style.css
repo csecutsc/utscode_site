@@ -31,7 +31,6 @@ body {
 }
 
 #main {
-  padding: 200px 50px;
   background: #f3f3f3;
 }
 
@@ -42,4 +41,39 @@ body {
 .footer {
   text-align: center;
   padding: 20px;
+}
+
+/*Large Devices*/
+
+@media all and (min-width: 1399px) {
+  #main {
+    padding: 200px 0px;
+  }
+}
+
+
+/*Medium sized devices*/
+
+@media (max-width: 1399px) and (min-width: 1180px) {
+  #main {
+    padding: 150px 50px;
+  }
+}
+
+
+/*Tablets*/
+
+@media (max-width: 1180px) and (min-width: 767px) {
+  #main {
+    padding: 140px 50px;
+  }
+}
+
+
+/*Phones*/
+
+@media (max-width: 767px) and (min-width: 0px) {
+  #main {
+    padding: 100px 50px;
+  }
 }
