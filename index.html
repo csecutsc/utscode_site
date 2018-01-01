@@ -22,9 +22,18 @@
   <!--Import FontAwesome-->
   <script src="https://use.fontawesome.com/82797e60c2.js"></script>
 
+  <!-- import and load particle.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'js/particles.json',
+      function() {
+        console.log('particles loaded')
+      })
+
+  </script>
+
   <!-- Import Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
-
   <!-- Custom Stylesheet and js -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/scripts.js"></script>
@@ -46,9 +55,9 @@
       </div>
     </nav>
   </div>
-    <div class="container text-center" id="main">
-      <div id="main_contents">
-        <div class="row">
+  <div class="container text-center" id="main">
+    <div id="main_contents">
+      <div class="row">
         <div class="col">
           <img src="img/main_logo.png" class="img-fluid" id="logo">
         </div>
@@ -62,15 +71,15 @@
         <div class="col">
           <h4>University of Toronto Scarborough, IC 230 @ 5pm</h4>
         </div>
-      </div>     
-    <br>
+      </div>
+      <br>
       <div class="row">
         <div class="col">
           <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#registerModal">Register now!</button>
         </div>
       </div>
-      </div>
-          
+    </div>
+
   </div>
   <hr>
   <div class="container text-center py-5" id="about">
@@ -134,7 +143,7 @@
       </div>
       <div class="col-lg-3 col-md-4">
         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#contestModal">Full contest details</button>
-      </div>    
+      </div>
     </div>
   </div>
   <hr>
@@ -163,15 +172,13 @@
         <img src="img/utsclogo.png" class="px-5 img-fluid">
       </div>
     </div>
-    <!-- csec-->
-    <!-- department? -->
   </div>
 
   <div class="container border-top footer text-secondary">
     <i class="fa fa-copyright" aria-hidden="true"></i> CSEC 2018 | All rights reserved.
   </div>
 
-  <!-- Modal -->
+  <!-- Modals -->
   <div class="modal fade" id="registerModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -214,6 +221,9 @@
       </div>
     </div>
   </div>
+
+  <!-- load particle js -->
+  <div id="particles-js"></div>
 </body>
 
 </html>
