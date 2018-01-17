@@ -31,6 +31,10 @@
 
   </script>
 
+  <!-- HTML to google sheets scripts -->
+  <script src="/js/form/googleformscript.js"></script>
+  <script src="/js/form/serialize.js"></script>
+
   <!-- Import Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
 
@@ -211,24 +215,24 @@
           &times;</button>
         </div>
         <div class="modal-body">
-          <form>
+          <form id="test-form">
             <div class="form-group">
-              <label for="exampleInputEmail1">Full Name</label>
-              <input type="text" class="form-control" placeholder="Full name">
+              <label>Full Name</label>
+              <input type="text" class="form-control" name="full_name" placeholder="Full name">
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" placeholder="Email">
+              <label>Email address</label>
+              <input type="email" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">UofT Student Number</label>
-              <input type="text" class="form-control" placeholder="Student number">
+              <label>UofT Student Number</label>
+              <input type="text" class="form-control" name="student_no" placeholder="Student number">
             </div>
             <!-- Do you already have a team? -->
             <!-- Which campus are you based at? -->
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Select your Campus</label>
-              <select class="form-control">
+              <label>Select your Campus</label>
+              <select class="form-control" name="campus">
               <option>Scarborough</option>
               <option>St. George</option>
               <option>Mississauga</option>
@@ -238,7 +242,7 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1"><small id="emailHelp" class="form-text text-muted">By checking this button, you agree to all the <a href="">Terms and Conditions and Photo Release Form </a>of this contest</small></label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="submit-form">Submit</button>
           </form>
         </div>
       </div>
