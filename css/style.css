@@ -30,6 +30,11 @@ body {
   transition-delay: 0s !important;
 }
 
+#sponsors .img-fluid:hover {
+  box-shadow: 0px 10px 30px rgba(195,195,195,1.0);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
 #logo {
   margin-bottom: 100px;
 }
