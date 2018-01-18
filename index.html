@@ -31,10 +31,6 @@
 
   </script>
 
-  <!-- HTML to google sheets scripts -->
-  <script src="/js/form/googleformscript.js"></script>
-
-
   <!-- Import Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
 
@@ -44,7 +40,6 @@
 </head>
 
 <body>
-  <!-- Nav -->
   <div class="container-fluid nav-nopadding">
     <nav class="navbar navbar-expand-md navbar-light fixed-top justify-content-end" id="navbar">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=#navbar-items><span class="navbar-toggler-icon"></span> </button>
@@ -54,7 +49,6 @@
           <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#sponsors">Sponsors</a></li>
-          <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a></li>
           <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/UTSCode" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
         </ul>
       </div>
@@ -71,18 +65,21 @@
       </div>
       <div class="row">
         <div class="col">
-          <h2>Mid March, 2018</h2>
+          <h2 class="text-secondary">Coming Soon...</h2>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <h4>University of Toronto Scarborough, Room TBD</h4>
+          <h4>University of Toronto Scarborough's annual competitive coding challenge</h4>
         </div>
       </div>
       <br>
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#registerModal">Register now!</button>
+      <div class="row justify-content-md-center">
+        <div class="col-lg-3 col-md-5 mb-3">
+          <button type="button" class="btn btn-lg btn-primary" onclick="window.open('https://www.facebook.com/UTSCode')">Visit our Facebook Page</button>
+        </div>
+        <div class="col-lg-3 col-md-5">
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#winnerModal">Past winners</button>
         </div>
       </div>
     </div>
@@ -92,22 +89,7 @@
   <div class="container text-center py-5" id="about">
     <div class="row mb-5">
       <div class="col">
-        <h4> This is the University of Toronto Scarborough's annual competitive coding challenge! We want to invite everyone to a challenging and unique coding competition! You and two other teammates can put your skills to the test and have a chance at winning one of three grand prizes!</h4>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col">
-        <h1><b>3</b></h1>
-        <h3>TEAM MEMBERS</h3>
-      </div>
-      <div class="col">
-        <h1><b>5</b></h1>
-        <h3>HOURS</h3>
-      </div>
-      <div class="col">
-        <h1><b>$1500</b></h1>
-        <h3>IN PRIZES</h3>
+        <h4> This is the University of Toronto Scarborough's annual competitive coding challenge! We want to invite everyone to a challenging and unique coding competition! Continue to check back on this page or our <a href="https://www.facebook.com/UTSCode" target="_blank">Facebook page</a> for more updates.</h4>
       </div>
     </div>
     <hr>
@@ -124,32 +106,15 @@
         </p>
       </div>
       <div class="col">
-        <div class="card text-white bg-success mb-2">
-          <div class="card-header">1st Place</div>
+        <div class="card text-white bg-dark">
+          <div class="card-header">Our Numbers from 2017</div>
           <div class="card-body">
-            <h5 class="card-title">$100 gift card!</h5>
+            <h5 class="card-text">70+ Attendees</h5>
+            <h5 class="card-text">29 Teams</h5>
+            <h5 class="card-text">5 Sponsors</h5>
+            <h5 class="card-text">$1500 in prizes</h5>
           </div>
         </div>
-        <div class="card text-black bg-warning mb-2">
-          <div class="card-header">2nd Place</div>
-          <div class="card-body">
-            <h5 class="card-title">Algorithms book!</h5>
-          </div>
-        </div>
-        <div class="card text-white bg-secondary mb-0">
-          <div class="card-header">3rd Place</div>
-          <div class="card-body">
-            <h5 class="card-title">A lollipop!</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row pt-3 justify-content-md-center">
-      <div class="col-lg-2 col-md-4 mb-3">
-        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#winnerModal">Past winners</button>
-      </div>
-      <div class="col-lg-2 col-md-4">
-        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#contestModal">Full contest details</button>
       </div>
     </div>
   </div>
@@ -178,13 +143,15 @@
   <div class="container py-5" id="faq">
     <h2 class="mb-5">Frequently Asked Questions</h2>
     <h4><b>Who can participate?</b></h4>
-    <p>Any student from the University of Toronto St. George, Scarborough, or Mississauga campus can attend. </p>
+    <p>Any student from the University of Toronto St. George, Scarborough, or Mississauga campus can attend.</p>
     <h4><b>How much experience with coding competitions do I need to have?</b></h4>
-    <p>None at all! For some this may be the first coding competition they compete in. You only need to be familiar with submitting solution on the <a href="https://open.kattis.com/help/submit">Kattis</a> judge. </p>
+    <p>None at all! For some this may be the first coding competition they compete in. You only need to be familiar with submitting solution on the <a href="https://open.kattis.com/help/submit">Kattis</a> judge.</p>
     <h4><b>What programming languages am I allowed to use?</b></h4>
     <p>Please refer to <a href="https://utoronto.kattis.com/help">Kattis Help</a> for more info on the online judge's supported environments.</p>
     <h4><b>Can there be groups of less/more than 3?</b></h4>
     <p>Official ICPC regulations require you to have a team of 3. For this contest, we will allow you to have less members. </p>
+    <h4><b>When and where will it take place?</b></h4>
+    <p>Mid March at UTSC's Instructional Centre (IC) Building, specific rooms TBD </p>
     <h4><b>Where can I get practice?</b></h4>
     <p>You can find problems on the <a href="https://open.kattis.com/help/submit">Kattis</a> judge, but we recommend solving problems with your team from past <a href="https://ecna17.kattis.com/problems">ECNA</a> regionals or look at the problems from last year's <a href="https://utoronto.kattis.com/sessions/zsbk7c">contest</a>. </p>
     <h4 class="text-center text-secondary mt-4">Got more questions? Feel free to shoot us an email at <a href="mailto:csec@utsc.utoronto.ca"> csec@mail.utoronto.ca</a>! <br>
@@ -196,7 +163,7 @@
     <h2 class="mb-2">Sponsors</h2>
     <div class="row">
       <div class="col">
-        <img src="img/blackcseclogo.png" class="mt-4 w-25 img-fluid" onclick="window.open('https://csec.club')">
+        <img src="img/blackcseclogo.png" class="mt-4 w-25 img-fluid">
       </div>
     </div>
   </div>
@@ -206,49 +173,6 @@
   </div>
 
   <!-- Modals -->
-  <div class="modal fade" id="registerModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Register</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          &times;</button>
-        </div>
-        <div class="modal-body">
-          <form id="test-form">
-            <div class="form-group">
-              <label>Full Name</label>
-              <input type="text" class="form-control" name="full_name" placeholder="Full name">
-            </div>
-            <div class="form-group">
-              <label>Email address</label>
-              <input type="email" class="form-control" name="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label>UofT Student Number</label>
-              <input type="text" class="form-control" name="student_no" placeholder="Student number">
-            </div>
-            <!-- Do you already have a team? -->
-            <!-- Which campus are you based at? -->
-            <div class="form-group">
-              <label>Select your Campus</label>
-              <select class="form-control" name="campus">
-              <option>Scarborough</option>
-              <option>St. George</option>
-              <option>Mississauga</option>
-              </select>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1"><small id="emailHelp" class="form-text text-muted">By checking this button, you agree to all the <a href="">Terms and Conditions and Photo Release Form </a>of this contest</small></label>
-            </div>
-            <button type="submit" class="btn btn-primary" id="submit-form">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="modal fade" id="winnerModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -305,23 +229,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="contestModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Full Contest Details</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          &times;</button>
-        </div>
-        <div class="modal-body">
-          <p>
-            Lorem ipsum dolor sit amet, quis amet ne vix, vis ad decore fierent. Ius id prompta volumus. At magna maiorum adolescens sea. His option euismod in, dolore commodo pri ei, wisi affert in usu. Mundi temporibus id sit, eam vero invidunt ei, vis at accumsan conceptam. Lorem ipsum dolor sit amet, quis amet ne vix, vis ad decore fierent. Ius id prompta volumus. At magna maiorum adolescens sea. His option euismod in, dolore commodo pri ei, wisi affert in usu. Mundi temporibus id sit, eam vero invidunt ei, vis at accumsan conceptam. Lorem ipsum dolor sit amet, quis amet ne vix, vis ad decore fierent. Ius id prompta volumus. At magna maiorum adolescens sea. His option euismod in, dolore commodo pri ei, wisi affert in usu. Mundi temporibus id sit, eam vero invidunt ei, vis at accumsan conceptam.
-          </p>
         </div>
       </div>
     </div>
