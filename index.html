@@ -4,7 +4,16 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112733614-1"></script>
-  <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-112733614-1');</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-112733614-1');
+
+  </script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,13 +35,6 @@
 
   <!-- import and load particle.js -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'js/particles.json',
-      function() {
-        console.log('particles loaded')
-      })
-
-  </script>
 
   <!-- Import Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
@@ -40,9 +42,11 @@
   <!-- Custom Stylesheet and js -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/scripts.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
+  <!-- Nav -->
   <div class="container-fluid nav-nopadding">
     <nav class="navbar navbar-expand-md navbar-light fixed-top justify-content-end" id="navbar">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=#navbar-items><span class="navbar-toggler-icon"></span> </button>
@@ -52,6 +56,7 @@
           <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#sponsors">Sponsors</a></li>
+          <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a></li>
           <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/UTSCode" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
         </ul>
       </div>
@@ -68,21 +73,18 @@
       </div>
       <div class="row">
         <div class="col">
-          <h2 class="text-secondary">Coming Soon...</h2>
+          <h2>March 17, 2018</h2>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <h4>University of Toronto Scarborough's annual competitive coding challenge</h4>
+          <h4>University of Toronto Scarborough, Instructional Centre [IC]</h4>
         </div>
       </div>
       <br>
-      <div class="row justify-content-md-center">
-        <div class="col-lg-3 col-md-5 mb-3">
-          <button type="button" class="btn btn-lg btn-primary" onclick="window.open('https://www.facebook.com/UTSCode')">Visit our Facebook Page</button>
-        </div>
-        <div class="col-lg-3 col-md-5">
-          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#winnerModal">Past winners</button>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#registerModal">Register now!</button>
         </div>
       </div>
     </div>
@@ -92,7 +94,22 @@
   <div class="container text-center py-5" id="about">
     <div class="row mb-5">
       <div class="col">
-        <h4> This is the University of Toronto Scarborough's annual competitive coding challenge! We want to invite everyone to a challenging and unique coding competition! Continue to check back on this page or our <a href="https://www.facebook.com/UTSCode" target="_blank">Facebook page</a> for more updates.</h4>
+        <h4> This is the University of Toronto Scarborough's annual competitive coding challenge! We want to invite everyone to a challenging and unique coding competition! You and two other teammates can put your skills to the test and have a chance at winning one of three grand prizes!</h4>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <h1><b>3</b></h1>
+        <h3>TEAM MEMBERS</h3>
+      </div>
+      <div class="col">
+        <h1><b>5</b></h1>
+        <h3>HOURS</h3>
+      </div>
+      <div class="col">
+        <h1><b>$500+</b></h1>
+        <h3>IN PRIZES</h3>
       </div>
     </div>
     <hr>
@@ -102,21 +119,50 @@
           The <a href="https://icpc.baylor.edu/">ACM-ICPC</a> (International Collegiate Programming Contest) is a team based programming contest consisting of generally 8-11 problems of varying difficulty. Since the 1990s, colleges have been competed at yearly regional competitions, trying to claim a spot at the <a href="https://icpc.baylor.edu/community/world-finals-champions">World Finals</a>.
         </p>
         <p>
-        The UTSCode contest was made as a joint effort between student organizations and the computer science faculty at UTSC, to help generate interest for the <a href="http://acm-ecna.ysu.edu/">East Central Regional</a> competition. If you want to improve and feel ready to take on the World Finals, let us know and we'll see what we can do.
+          The UTSCode contest was made as a joint effort between student organizations and the computer science faculty at UTSC, to help identify strong candidates to send to regional competitions. If you want to improve and feel ready to take on the World Finals, let us know and we'll see what we can do.
         </p>
         <p>
           Every year we try to giveaway cool unique prizes. Last year we gave out Corsair K70 mechanical keyboards, cracking the coding interview books, and amazon gift cards. We also provided food complentary of <a href="https://www.utsc.utoronto.ca/projects/thehub/">The Hub</a>.
         </p>
       </div>
       <div class="col">
+        <!-- Add when the prize's are known
+        <div class="card text-white bg-success mb-2">
+          <div class="card-header">1st Place</div>
+          <div class="card-body">
+            <h5 class="card-title">$100 gift card!</h5>
+          </div>
+        </div>
+        <div class="card text-black bg-warning mb-2">
+          <div class="card-header">2nd Place</div>
+          <div class="card-body">
+            <h5 class="card-title">Algorithms book!</h5>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-0">
+          <div class="card-header">3rd Place</div>
+          <div class="card-body">
+            <h5 class="card-title">A lollipop!</h5>
+          </div>
+        </div>
+        -->
         <div class="card text-white bg-dark">
           <div class="card-header">Our Numbers from 2017</div>
           <div class="card-body">
             <h5 class="card-text">70+ Attendees</h5>
             <h5 class="card-text">29 Teams</h5>
             <h5 class="card-text">5 Sponsors</h5>
+            <h5 class="card-text">1 Amazing Competition</h5>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row pt-3 justify-content-md-center">
+      <div class="col-lg-2 col-md-4 mb-3">
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#winnerModal">Past winners</button>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#contestModal">Full contest details</button>
       </div>
     </div>
   </div>
@@ -145,15 +191,13 @@
   <div class="container py-5" id="faq">
     <h2 class="mb-5">Frequently Asked Questions</h2>
     <h4><b>Who can participate?</b></h4>
-    <p>Any student from the University of Toronto St. George, Scarborough, or Mississauga campus can attend.</p>
+    <p>Any student from the University of Toronto St. George, Scarborough, or Mississauga campus can attend. </p>
     <h4><b>How much experience with coding competitions do I need to have?</b></h4>
-    <p>None at all! For some this may be the first coding competition they compete in. You only need to be familiar with submitting solution on the <a href="https://open.kattis.com/help/submit">Kattis</a> judge.</p>
+    <p>None at all! For some this may be the first coding competition they compete in. You only need to be familiar with submitting solution on the <a href="https://open.kattis.com/help/submit">Kattis</a> judge. </p>
     <h4><b>What programming languages am I allowed to use?</b></h4>
     <p>Please refer to <a href="https://utoronto.kattis.com/help">Kattis Help</a> for more info on the online judge's supported environments.</p>
     <h4><b>Can there be groups of less/more than 3?</b></h4>
     <p>Official ICPC regulations require you to have a team of 3. For this contest, we will allow you to have less members. </p>
-    <h4><b>When and where will it take place?</b></h4>
-    <p>Mid March at UTSC's Instructional Centre (IC) Building, specific rooms TBD </p>
     <h4><b>Where can I get practice?</b></h4>
     <p>You can find problems on the <a href="https://open.kattis.com/help/submit">Kattis</a> judge, but we recommend solving problems with your team from past <a href="https://ecna17.kattis.com/problems">ECNA</a> regionals or look at the problems from last year's <a href="https://utoronto.kattis.com/sessions/zsbk7c">contest</a>. </p>
     <h4 class="text-center text-secondary mt-4">Got more questions? Feel free to shoot us an email at <a href="mailto:admin@utscode.com"> admin@utscode.com</a>! <br>
@@ -175,6 +219,125 @@
   </div>
 
   <!-- Modals -->
+
+  <!-- Reg form -->
+  <div class="modal fade" id="registerModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          &times;</button>
+        </div>
+        <div class="modal-body">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfe2BgvJCDAP9IoBV2bDMzFD5hOg8BoTt8KTCDMh_U-xGd65A/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on" onsubmit="" class="needs-validation" novalidate>
+
+            <!-- Full name -->
+            <div class="form-group">
+              <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text">
+                  <div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1201541875">
+                      <div class="ss-q-title">Full name
+                      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                  </div>
+                  <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                  </label>
+
+                  <input type="text" name="entry.1201541875" value="" class="ss-q-short form-control" id="entry_1201541875" dir="auto" aria-label="Full name  " aria-required="true" required="" title="" placeholder="Full name">
+                  <div class="error-message" id="365678314_errorMessage"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-text">
+              <div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1319832469">
+                  <div class="ss-q-title">Email Address
+            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+              </div>
+              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+              </label>
+
+              <input type="email" name="entry.1319832469" value="" class="ss-q-short form-control" id="entry_1319832469" dir="auto" aria-label="Email Address" aria-required="true" required="" title="" placeholder="Email">
+              <div class="error-message" id="1283085552_errorMessage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student # -->
+      <div class="form-group">
+        <div class="ss-form-question errorbox-good" role="listitem">
+          <div dir="auto" class="ss-item ss-item-required ss-text">
+            <div class="ss-form-entry">
+              <label class="ss-q-item-label" for="entry_1171341493">
+                <div class="ss-q-title">UofT Student Number
+            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+            </div>
+            <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+            </label>
+
+            <input type="number" name="entry.1171341493" value="" class="ss-q-short form-control" id="entry_1171341493" dir="auto" aria-label="UofT Student Number" aria-required="true" required="" title="" placeholder="Student number">
+            <div class="error-message" id="104992292_errorMessage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Which campus are you based at? -->
+    <div class="form-group">
+      <div class="ss-form-question errorbox-good" role="listitem">
+        <div dir="auto" class="ss-item ss-item-required ss-select">
+          <div class="ss-form-entry">
+            <label class="ss-q-item-label" for="entry_1308944106">
+              <div class="ss-q-title">Select your campus
+            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+          </div>
+          <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+          </label>
+          <select name="entry.1308944106" id="entry_1308944106" aria-label="Select your campus  " aria-required="true" required="" class="required form-control">
+          <option value="Scarborough">Scarborough</option> <option value="St. George">St. George</option> <option value="Mississauga">Mississauga</option></select>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Checkbox -->
+  <div class="form-check">
+    <div class="ss-form-question errorbox-good" role="listitem">
+      <div dir="auto" class="ss-item ss-item-required ss-checkbox">
+        <div class="ss-form-entry">
+          <div class="ss-choices ss-choices-required" role="group" aria-label="By checking this button, you agree to all the Terms and Conditions and Photo Release Form of this contest  ">
+            <div class="ss-choice-item form-check">
+              <div class="ss-choice-item-control goog-inline-block">
+                <input type="checkbox" name="entry.1009321477" value="Yes" id="group_1009321477_1" role="checkbox" class="form-check-input" required>
+              </div>
+              <label class="ss-q-item-label form-check-label" for="entry.1009321477">
+            <div class="ss-q-title">
+            <small class="form-text text-muted">By checking this button, you agree to all the <a href="">Terms and Conditions and Photo Release Form </a>of this contest</small>
+            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+            </div>
+            <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="g-recaptcha" data-sitekey="6LfPV0oUAAAAAKmI8vgtHskDeOADZ05wERAIWjc7"></div>
+  <!-- Submit button -->
+  <input type="submit" name="submit" value="Submit" class=" btn btn-primary" id="ss-submit">
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+
   <div class="modal fade" id="winnerModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -231,6 +394,23 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="contestModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Full Contest Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          &times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, quis amet ne vix, vis ad decore fierent. Ius id prompta volumus. At magna maiorum adolescens sea. His option euismod in, dolore commodo pri ei, wisi affert in usu. Mundi temporibus id sit, eam vero invidunt ei, vis at accumsan conceptam. Lorem ipsum dolor sit amet, quis amet ne vix, vis ad decore fierent. Ius id prompta volumus. At magna maiorum adolescens sea. His option euismod in, dolore commodo pri ei, wisi affert in usu. Mundi temporibus id sit, eam vero invidunt ei, vis at accumsan conceptam. Lorem ipsum dolor sit amet, quis amet ne vix, vis ad decore fierent. Ius id prompta volumus. At magna maiorum adolescens sea. His option euismod in, dolore commodo pri ei, wisi affert in usu. Mundi temporibus id sit, eam vero invidunt ei, vis at accumsan conceptam.
+          </p>
         </div>
       </div>
     </div>
