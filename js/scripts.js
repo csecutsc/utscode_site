@@ -52,5 +52,12 @@ $(document).ready(function () {
     function() {
       console.log('particles loaded')
     });
+  
+  $('form').on('submit', function(e) {
+  if(grecaptcha.getResponse() == "") {
+    e.preventDefault();
+  };
+    
+});
 });
 
