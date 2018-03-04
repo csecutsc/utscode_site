@@ -53,6 +53,7 @@ $(document).ready(function () {
       console.log('particles loaded')
     });
   
+  // ensures the captcha is completed
   $('form').on('submit', function(e) {
   if(grecaptcha.getResponse() == "") {
     e.preventDefault();
