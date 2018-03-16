@@ -27,38 +27,39 @@ $(document).ready(function () {
   navCollapseToggle.on("click", "a", null, function () {
     navCollapseToggle.collapse('hide');
   });
-  
+
   // Form Validation
-  (function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
   })();
-  
+
   // Particle js
   particlesJS.load('particles-js', 'js/particles.json',
-    function() {
+    function () {
       console.log('particles loaded')
     });
-  
-  // ensures the captcha is completed
-  $('form').on('submit', function(e) {
-  if(grecaptcha.getResponse() == "") {
-    e.preventDefault();
-  };
-    
-});
-});
 
+  // ensures the captcha is completed
+  $('form').on('submit', function (e) {
+    if (grecaptcha.getResponse() == "") {
+      e.preventDefault();
+    };
+
+  });
+
+
+});
