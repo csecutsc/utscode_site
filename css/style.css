@@ -31,7 +31,9 @@ body {
 }
 
 #sponsors .img-fluid:hover {
-  box-shadow: 0px 10px 30px rgba(195, 195, 195, 1.0);
+  -webkit-box-shadow: 4px 4px 2px 0px rgba(189,189,189,1);
+  -moz-box-shadow: 4px 4px 2px 0px rgba(189,189,189,1);
+  box-shadow: 4px 4px 2px 0px rgba(189,189,189,1);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
