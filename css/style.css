@@ -100,3 +100,12 @@ body {
 .small{
   width: 10%;
 }
+
+.large{
+  width: 70%;
+}
+
+.medium{
+  width: 30%;
+  padding: 4px;
+}

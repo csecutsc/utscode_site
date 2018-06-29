@@ -25,10 +25,13 @@
   <meta name="author" content="Computer Science Enrichment Club Web Division">
 
   <!-- Bootstrap 4 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
 
   <!--Import FontAwesome-->
   <script src="https://use.fontawesome.com/82797e60c2.js"></script>
@@ -47,19 +50,35 @@
   <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
-<body>
+<body class="smaller">
   <!-- Nav -->
   <div class="container-fluid nav-nopadding">
     <nav class="navbar navbar-expand-md navbar-light fixed-top justify-content-end" id="navbar">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=#navbar-items><span class="navbar-toggler-icon"></span> </button>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=#navbar-items>
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbar-items">
         <ul class="navbar-nav align-items-end">
-          <li class="nav-item"> <a class="nav-link" href="#main">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#sponsors">Sponsors</a></li>
-          <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/UTSCode" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#main">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/UTSCode" target="_blank">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -70,7 +89,7 @@
     <div id="main_contents">
       <div class="row">
         <div class="col">
-          <img src="img/main_logo.png" class="img-fluid" id="logo">
+          <img src="img/main_logo.png" class="img-fluid large" id="logo">
         </div>
       </div>
       <div class="row">
@@ -96,21 +115,29 @@
   <div class="container text-center py-5" id="about">
     <div class="row mb-5">
       <div class="col">
-        <h4> This is the University of Toronto Scarborough's annual competitive coding challenge! We want to invite everyone to a challenging and unique coding competition! You and two other teammates can put your skills to the test and have a chance at winning one of three grand prizes!</h4>
+        <h4> This is the University of Toronto Scarborough's annual competitive coding challenge! We want to invite everyone to
+          a challenging and unique coding competition! You and two other teammates can put your skills to the test and have
+          a chance at winning one of three grand prizes!</h4>
       </div>
     </div>
     <hr>
     <div class="row">
       <div class="col">
-        <h1><b>3</b></h1>
+        <h1>
+          <b>3</b>
+        </h1>
         <h3>TEAM MEMBERS</h3>
       </div>
       <div class="col">
-        <h1><b>5</b></h1>
+        <h1>
+          <b>5</b>
+        </h1>
         <h3>HOURS</h3>
       </div>
       <div class="col">
-        <h1><b>$500+</b></h1>
+        <h1>
+          <b>$500+</b>
+        </h1>
         <h3>IN PRIZES</h3>
       </div>
     </div>
@@ -118,13 +145,21 @@
     <div class="row mb-5 mt-5">
       <div class="col-lg-8 col-md-8">
         <p>
-          The <a href="https://icpc.baylor.edu/">ACM-ICPC</a> (International Collegiate Programming Contest) is a team based programming contest consisting of generally 8-11 problems of varying difficulty. Since the 1990s, colleges have been competed at yearly regional competitions, trying to claim a spot at the <a href="https://icpc.baylor.edu/community/world-finals-champions">World Finals</a>.
+          The
+          <a href="https://icpc.baylor.edu/">ACM-ICPC</a> (International Collegiate Programming Contest) is a team based programming contest consisting of generally
+          8-11 problems of varying difficulty. Since the 1990s, colleges have been competed at yearly regional competitions,
+          trying to claim a spot at the
+          <a href="https://icpc.baylor.edu/community/world-finals-champions">World Finals</a>.
         </p>
         <p>
-          The UTSCode contest was made as a joint effort between student organizations and the computer science faculty at UTSC, to help identify strong candidates to send to regional competitions. If you want to improve and feel ready to take on the World Finals, let us know and we'll see what we can do.
+          The UTSCode contest was made as a joint effort between student organizations and the computer science faculty at UTSC, to
+          help identify strong candidates to send to regional competitions. If you want to improve and feel ready to take
+          on the World Finals, let us know and we'll see what we can do.
         </p>
         <p>
-          Every year we try to giveaway cool unique prizes. Last year we gave out Corsair K70 mechanical keyboards, cracking the coding interview books, and amazon gift cards. We also provided food complentary of <a href="https://www.utsc.utoronto.ca/projects/thehub/">The Hub</a>.
+          Every year we try to giveaway cool unique prizes. Last year we gave out Corsair K70 mechanical keyboards, cracking the coding
+          interview books, and amazon gift cards. We also provided food complentary of
+          <a href="https://www.utsc.utoronto.ca/projects/thehub/">The Hub</a>.
         </p>
       </div>
       <div class="col">
@@ -185,24 +220,46 @@
       </div>
     </div>
     <div class="row justify-content-center pt-4">
-      <button type="button" class=" btn btn-lg btn-primary" onclick="window.open('https://www.facebook.com/UTSCode')"><small>See more from our first event!</small></button>
+      <button type="button" class=" btn btn-lg btn-primary" onclick="window.open('https://www.facebook.com/UTSCode')">
+        <small>See more from our first event!</small>
+      </button>
     </div>
   </div>
 
   <!-- FAQ -->
   <div class="container py-5" id="faq">
     <h2 class="mb-5">Frequently Asked Questions</h2>
-    <h4><b>Who can participate?</b></h4>
-    <p>Any student from the University of Toronto St. George, Scarborough, or Mississauga campus can attend. High School students can also attend. </p>
-    <h4><b>How much experience with coding competitions do I need to have?</b></h4>
-    <p>None at all! For some this may be the first coding competition they compete in. You only need to be familiar with submitting solution on the <a href="https://open.kattis.com/help/submit">Kattis</a> judge. </p>
-    <h4><b>What programming languages am I allowed to use?</b></h4>
-    <p>Please refer to <a href="https://utoronto.kattis.com/help">Kattis Help</a> for more info on the online judge's supported environments.</p>
-    <h4><b>Can there be groups of less/more than 3?</b></h4>
-    <p>Official ICPC regulations require you to have a team of 3. For this contest, we will allow you to have less members. </p>
-    <h4><b>Where can I get practice?</b></h4>
-    <p>You can find problems on the <a href="https://open.kattis.com/help/submit">Kattis</a> judge, but we recommend solving problems with your team from past <a href="https://ecna17.kattis.com/problems">ECNA</a> regionals or look at the problems from last year's <a href="https://utoronto.kattis.com/sessions/zsbk7c">contest</a>. </p>
-    <h4 class="text-center text-secondary mt-4">Got more questions? Feel free to shoot us an email at <a href="mailto:admin@utscode.com"> admin@utscode.com</a>! <br>
+    <h4>
+      <b>Who can participate?</b>
+    </h4>
+    <p>Any student from the University of Toronto St. George, Scarborough, or Mississauga campus can attend. High School students
+      can also attend. </p>
+    <h4>
+      <b>How much experience with coding competitions do I need to have?</b>
+    </h4>
+    <p>None at all! For some this may be the first coding competition they compete in. You only need to be familiar with submitting
+      solution on the
+      <a href="https://open.kattis.com/help/submit">Kattis</a> judge. </p>
+    <h4>
+      <b>What programming languages am I allowed to use?</b>
+    </h4>
+    <p>Please refer to
+      <a href="https://utoronto.kattis.com/help">Kattis Help</a> for more info on the online judge's supported environments.</p>
+    <h4>
+      <b>Can there be groups of less/more than 3?</b>
+    </h4>
+    <p>Official ICPC regulations require you to have a team of 3. For this contest, we will allow you to have less members.
+    </p>
+    <h4>
+      <b>Where can I get practice?</b>
+    </h4>
+    <p>You can find problems on the
+      <a href="https://open.kattis.com/help/submit">Kattis</a> judge, but we recommend solving problems with your team from past
+      <a href="https://ecna17.kattis.com/problems">ECNA</a> regionals or look at the problems from last year's
+      <a href="https://utoronto.kattis.com/sessions/zsbk7c">contest</a>. </p>
+    <h4 class="text-center text-secondary mt-4">Got more questions? Feel free to shoot us an email at
+      <a href="mailto:admin@utscode.com"> admin@utscode.com</a>!
+      <br>
     </h4>
   </div>
 
@@ -214,15 +271,17 @@
         <img src="img/blackcseclogo.png" class="mt-4 w-25 img-fluid" onclick="window.open('https://csec.club')">
       </div>
     </div>
-    <br><br>
+    <br>
+    <br>
     <h3 class="mb-2">Platinum Sponsors</h3>
     <div class="row">
       <div class="col">
-        <img src="img/Dessa.png" class="mt-4 w-20 img-fluid" onclick="window.open('https://Dessa.com')">
+        <img src="img/Dessa.png" class="mt-4 w-20 img-fluid medium" onclick="window.open('https://Dessa.com')">
       </div>
     </div>
-    <br><br>
-    <h5 class="mb-2">Special Sponsors</h5>
+    <br>
+    <br>
+    <h5 class="mb-2">Valued Sponsors</h5>
     <div class="row">
       <div class="col">
         <img src="img/Google.png" class="small img-fluid" onclick="window.open('https://Google.com')">
@@ -244,10 +303,11 @@
         <div class="modal-header">
           <h5 class="modal-title">Register</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          &times;</button>
+            &times;</button>
         </div>
         <div class="modal-body">
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfe2BgvJCDAP9IoBV2bDMzFD5hOg8BoTt8KTCDMh_U-xGd65A/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on" onsubmit="" class="needs-validation" novalidate>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfe2BgvJCDAP9IoBV2bDMzFD5hOg8BoTt8KTCDMh_U-xGd65A/formResponse" method="POST"
+            id="ss-form" target="_self" autocomplete="on" onsubmit="" class="needs-validation" novalidate>
 
             <!-- Full name -->
             <div class="form-group">
@@ -256,104 +316,114 @@
                   <div class="ss-form-entry">
                     <label class="ss-q-item-label" for="entry_1201541875">
                       <div class="ss-q-title">Full Name
-                      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-                  </div>
-                  <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-                  </label>
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                      </div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                    </label>
 
-                  <input type="text" name="entry.1201541875" value="" class="ss-q-short form-control" id="entry_1201541875" dir="auto" aria-label="Full name  " aria-required="true" required="" title="" placeholder="Full name">
-                  <div class="error-message" id="365678314_errorMessage"></div>
+                    <input type="text" name="entry.1201541875" value="" class="ss-q-short form-control" id="entry_1201541875" dir="auto" aria-label="Full name  "
+                      aria-required="true" required="" title="" placeholder="Full name">
+                    <div class="error-message" id="365678314_errorMessage"></div>
+                  </div>
                 </div>
               </div>
             </div>
-        </div>
-        <!-- Email -->
-        <div class="form-group">
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item ss-item-required ss-text">
-              <div class="ss-form-entry">
-                <label class="ss-q-item-label" for="entry_1319832469">
-                  <div class="ss-q-title">Email Address
-            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+            <!-- Email -->
+            <div class="form-group">
+              <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text">
+                  <div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1319832469">
+                      <div class="ss-q-title">Email Address
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                      </div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                    </label>
+
+                    <input type="email" name="entry.1319832469" value="" class="ss-q-short form-control" id="entry_1319832469" dir="auto" aria-label="Email Address"
+                      aria-required="true" required="" title="" placeholder="Email">
+                    <div class="error-message" id="1283085552_errorMessage"></div>
+                  </div>
+                </div>
               </div>
-              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-              </label>
-
-              <input type="email" name="entry.1319832469" value="" class="ss-q-short form-control" id="entry_1319832469" dir="auto" aria-label="Email Address" aria-required="true" required="" title="" placeholder="Email">
-              <div class="error-message" id="1283085552_errorMessage"></div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Student # -->
-      <div class="form-group">
-        <div class="ss-form-question errorbox-good" role="listitem">
-          <div dir="auto" class="ss-item ss-text">
-            <div class="ss-form-entry">
-              <label class="ss-q-item-label" for="entry_1171341493">
-                <div class="ss-q-title">UofT Student Number
-            <label for="itemView.getDomIdToLabel()"></label>
-            </div>
-            <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
+            <!-- Student # -->
+            <div class="form-group">
+              <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-text">
+                  <div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1171341493">
+                      <div class="ss-q-title">UofT Student Number
+                        <label for="itemView.getDomIdToLabel()"></label>
+                      </div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                    </label>
 
-            <input type="number" name="entry.1171341493" value="" class="ss-q-short form-control" id="entry_1171341493" dir="auto" aria-label="UofT Student Number" title="" placeholder="UofT Students Only">
-            <div class="error-message" id="104992292_errorMessage"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Which campus are you based at? -->
-    <div class="form-group">
-      <div class="ss-form-question errorbox-good" role="listitem">
-        <div dir="auto" class="ss-item ss-item-required ss-select">
-          <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1308944106">
-              <div class="ss-q-title">Select your UofT campus or High School
-            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-          </div>
-          <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-          </label>
-          <select name="entry.1308944106" id="entry_1308944106" aria-label="Select your campus  " aria-required="true" required="" class="required form-control">
-          <option value="Scarborough">Scarborough</option> <option value="St. George">St. George</option> <option value="Mississauga">Mississauga</option> <option value="High School">High School</option></select>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Checkbox -->
-  <div class="form-check">
-    <div class="ss-form-question errorbox-good" role="listitem">
-      <div dir="auto" class="ss-item ss-item-required ss-checkbox">
-        <div class="ss-form-entry">
-          <div class="ss-choices ss-choices-required" role="group" aria-label="By checking this button, you agree to all the Terms and Conditions and Photo Release Form of this contest  ">
-            <div class="ss-choice-item form-check">
-              <div class="ss-choice-item-control goog-inline-block">
-                <input type="checkbox" name="entry.1009321477" value="Yes" id="group_1009321477_1" role="checkbox" class="form-check-input" required>
+                    <input type="number" name="entry.1171341493" value="" class="ss-q-short form-control" id="entry_1171341493" dir="auto" aria-label="UofT Student Number"
+                      title="" placeholder="UofT Students Only">
+                    <div class="error-message" id="104992292_errorMessage"></div>
+                  </div>
+                </div>
               </div>
-              <label class="ss-q-item-label form-check-label" for="entry.1009321477">
-            <div class="ss-q-title">
-            <small class="form-text text-muted">By checking this button, you agree to all the <a href="" data-toggle="modal" data-target="#contestModal">terms and conditions</a> of the contest</small>
-            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
             </div>
-            <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-          </div>
+
+            <!-- Which campus are you based at? -->
+            <div class="form-group">
+              <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-select">
+                  <div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1308944106">
+                      <div class="ss-q-title">Select your UofT campus or High School
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                      </div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                    </label>
+                    <select name="entry.1308944106" id="entry_1308944106" aria-label="Select your campus  " aria-required="true" required=""
+                      class="required form-control">
+                      <option value="Scarborough">Scarborough</option>
+                      <option value="St. George">St. George</option>
+                      <option value="Mississauga">Mississauga</option>
+                      <option value="High School">High School</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check">
+              <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-checkbox">
+                  <div class="ss-form-entry">
+                    <div class="ss-choices ss-choices-required" role="group" aria-label="By checking this button, you agree to all the Terms and Conditions and Photo Release Form of this contest  ">
+                      <div class="ss-choice-item form-check">
+                        <div class="ss-choice-item-control goog-inline-block">
+                          <input type="checkbox" name="entry.1009321477" value="Yes" id="group_1009321477_1" role="checkbox" class="form-check-input"
+                            required>
+                        </div>
+                        <label class="ss-q-item-label form-check-label" for="entry.1009321477">
+                          <div class="ss-q-title">
+                            <small class="form-text text-muted">By checking this button, you agree to all the
+                              <a href="" data-toggle="modal" data-target="#contestModal">terms and conditions</a> of the contest</small>
+                            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                          </div>
+                          <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- captcha -->
+            <div class="g-recaptcha" data-sitekey="6LfPV0oUAAAAAKmI8vgtHskDeOADZ05wERAIWjc7"></div>
+            <!-- Submit button -->
+            <input type="submit" name="submit" value="Submit" class=" btn btn-primary" id="ss-submit">
+          </form>
         </div>
       </div>
     </div>
-  </div>
-  </div>
-  <!-- captcha -->
-  <div class="g-recaptcha" data-sitekey="6LfPV0oUAAAAAKmI8vgtHskDeOADZ05wERAIWjc7"></div>
-  <!-- Submit button -->
-  <input type="submit" name="submit" value="Submit" class=" btn btn-primary" id="ss-submit">
-  </form>
-  </div>
-  </div>
-  </div>
   </div>
 
   <div class="modal fade" id="winnerModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -362,14 +432,15 @@
         <div class="modal-header">
           <h5 class="modal-title">UTSCode 2017 Winners</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          &times;</button>
+            &times;</button>
         </div>
         <div class="modal-body">
           <div class="card-group">
             <div class="card text-white bg-success mb-2" style="min-width: 18rem;">
               <div class="card-header">1st Place</div>
               <div class="card-body">
-                <h5 class="card-title"><i class="fa fa-users" aria-hidden="true"></i> UWaterloo G-G-Geomatics</h5>
+                <h5 class="card-title">
+                  <i class="fa fa-users" aria-hidden="true"></i> UWaterloo G-G-Geomatics</h5>
                 <h5 class="card-text">Rhys Rustad-Elliott</h5>
                 <h5 class="card-text">Jason Pham</h5>
                 <h5 class="card-text">Tudor Brindus</h5>
@@ -380,7 +451,8 @@
             <div class="card text-black bg-warning mb-2" style="min-width: 18rem;">
               <div class="card-header">2nd Place</div>
               <div class="card-body">
-                <h5 class="card-title"><i class="fa fa-users" aria-hidden="true"></i> Panda</h5>
+                <h5 class="card-title">
+                  <i class="fa fa-users" aria-hidden="true"></i> Panda</h5>
                 <h5 class="card-text">Xincheng Zhang</h5>
                 <h5 class="card-text">Peiying Li</h5>
                 <h5 class="card-text">Changyu Bi</h5>
@@ -391,7 +463,8 @@
             <div class="card text-white bg-secondary mb-2" style="min-width: 18rem;">
               <div class="card-header">3rd Place</div>
               <div class="card-body">
-                <h5 class="card-title"><i class="fa fa-users" aria-hidden="true"></i> CAPITAL</h5>
+                <h5 class="card-title">
+                  <i class="fa fa-users" aria-hidden="true"></i> CAPITAL</h5>
                 <h5 class="card-text">Akshay Nair</h5>
                 <h5 class="card-text">Sakeeb Hossain</h5>
                 <h5 class="card-text">Hamza Raza</h5>
@@ -402,7 +475,8 @@
             <div class="card text-white bg-primary mb-2" style="min-width: 18rem;">
               <div class="card-header">Best First Year Team Award</div>
               <div class="card-body">
-                <h5 class="card-title"><i class="fa fa-users" aria-hidden="true"></i> play2win</h5>
+                <h5 class="card-title">
+                  <i class="fa fa-users" aria-hidden="true"></i> play2win</h5>
                 <h5 class="card-text">Jiayi Zhao</h5>
                 <h5 class="card-text">Alex Wong</h5>
                 <h5 class="card-text">Tsz Cheuk So</h5>
@@ -423,13 +497,24 @@
         <div class="modal-header">
           <h5 class="modal-title">Full Contest Details</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          &times;</button>
+            &times;</button>
         </div>
         <div class="modal-body">
           <p>
-            You agree that by participating in the UTSCode competitive programming challenge, you will abide by all rules of UTSCode listed on this page, as well as all rules of the Kattis Online Judge system. You agree that all rulings on prizes by the contest coordinators are final. You understand that failure to comply with any of these terms may result in permanent disqualification from all future contests. We, the coordinators, reserve the right to modify the rules, terms, and conditions of the UTSCode at any time, and without notice. By participating, you agree to release us from any and all claims, damages or liabilities arising from or relating to your participation.
-            <br><br> The contest will last 5 hours, with each team having a maximum of 3 members. While the contest is running, we advise teams to not discuss solutions with other as this could lead to disqualification.
-            <br><br> Time and memory limits for the execution of the program will be displayed on each problem statement page. Contestants and teams may submit solutions using any of the following programming languages supported on the Kattis Online Judge as many times as they wish. Please refer to <a href="https://utoronto.kattis.com/help">Kattis Help</a> for more info on the online judge's supported environments.
+            You agree that by participating in the UTSCode competitive programming challenge, you will abide by all rules of UTSCode
+            listed on this page, as well as all rules of the Kattis Online Judge system. You agree that all rulings on prizes
+            by the contest coordinators are final. You understand that failure to comply with any of these terms may result
+            in permanent disqualification from all future contests. We, the coordinators, reserve the right to modify the
+            rules, terms, and conditions of the UTSCode at any time, and without notice. By participating, you agree to release
+            us from any and all claims, damages or liabilities arising from or relating to your participation.
+            <br>
+            <br> The contest will last 5 hours, with each team having a maximum of 3 members. While the contest is running, we
+            advise teams to not discuss solutions with other as this could lead to disqualification.
+            <br>
+            <br> Time and memory limits for the execution of the program will be displayed on each problem statement page. Contestants
+            and teams may submit solutions using any of the following programming languages supported on the Kattis Online
+            Judge as many times as they wish. Please refer to
+            <a href="https://utoronto.kattis.com/help">Kattis Help</a> for more info on the online judge's supported environments.
         </div>
       </div>
     </div>
