@@ -59,7 +59,7 @@ body {
 
 @media all and (min-width: 1399px) {
   #main {
-    padding: 200px 0px;
+    padding: 120px 0px;
   }
 }
 
@@ -67,7 +67,7 @@ body {
 
 @media (max-width: 1399px) and (min-width: 1180px) {
   #main {
-    padding: 150px 50px;
+    padding: 80px 50px;
   }
 }
 
@@ -99,4 +99,8 @@ body {
 
 .small{
   width: 10%;
+}
+
+.normalize{
+  width: 65%;
 }
