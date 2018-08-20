@@ -104,3 +104,12 @@ body {
 .normalize{
   width: 65%;
 }
+
+.large{
+  width: 70%;
+}
+
+.medium{
+  width: 30%;
+  padding: 4px;
+}
