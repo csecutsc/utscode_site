@@ -76,7 +76,7 @@ body {
 
 @media (max-width: 1180px) and (min-width: 767px) {
   #main {
-    padding: 140px 50px;
+    padding: 60px 50px;
   }
   
   #gallery {
@@ -89,7 +89,7 @@ body {
 
 @media (max-width: 767px) and (min-width: 0px) {
   #main {
-    padding: 100px 50px;
+    padding: 80px 50px;
   }
   
   #gallery {
@@ -103,4 +103,13 @@ body {
 
 .normalize{
   width: 65%;
+}
+
+.large{
+  width: 70%;
+}
+
+.medium{
+  width: 30%;
+  padding: 4px;
 }
