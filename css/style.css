@@ -114,6 +114,12 @@ body {
   padding: 4px;
 }
 
+.medsmall{
+  width: 20%;
+  padding: 4px;
+}
+
 .clickable{
   cursor: pointer;
+  margin-left: 40px;
 }
