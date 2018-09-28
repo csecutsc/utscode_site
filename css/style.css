@@ -109,6 +109,10 @@ body {
   width: 70%;
 }
 
+.xl{
+  width: 150%;
+}
+
 .medium{
   width: 30%;
   padding: 4px;
@@ -122,4 +126,4 @@ body {
 .clickable{
   cursor: pointer;
   margin-left: 40px;
-}
+}large
